@@ -38,15 +38,15 @@ jobs:
 
     - name: Teamscale Upload
       uses: cqse/teamscale-upload-action@v2.9.2
-        with:
-          server: 'https://g3.teamscale.dev'
-          project: 'workshop-project'
-          user: 'admin'
-          partition: 'Github Action > Linux Branch And Timestamp'
-          accesskey: ${{ secrets.ACCESS_KEY }}
-          format: 'JACOCO'
-          message: 'This is a test message.'
-          files: 'build/reports/jacoco/test/jacocoTestReport.xml'
+      with:
+        server: 'https://g3.teamscale.dev'
+        project: 'workshop-project'
+        user: 'admin'
+        partition: 'Github Action > Linux Branch And Timestamp'
+        accesskey: ${{ secrets.ACCESS_KEY }}
+        format: 'JACOCO'
+        message: 'This is a test message.'
+        files: 'build/reports/jacoco/test/jacocoTestReport.xml'
 
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
