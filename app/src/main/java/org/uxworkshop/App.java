@@ -13,7 +13,6 @@ public class App {
         System.out.println(app.getGreeting());
         app.oneOrOther(true);
         // TODO: This is not wat we want
-        // FIXME: ABC
     }
 
     public void oneOrOther(boolean choice) {
